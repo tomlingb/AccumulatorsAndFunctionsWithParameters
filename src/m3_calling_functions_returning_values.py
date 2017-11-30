@@ -18,7 +18,7 @@ def main():
     run_test_sum_of_digits()
     run_test_digits_in_cube()
     run_test_digits_in_power()
-    run_test_fancy_sums_of_digits()
+    #run_test_fancy_sums_of_digits()
 
     # ------------------------------------------------------------------
     # TODO: 9. DO THIS LAST!
@@ -31,7 +31,7 @@ def main():
     #       ** Ask a TA or your professor for help in that case. **
     # ------------------------------------------------------------------
 
-    # m3t_tester.main()
+    m3t_tester.main()
 
 
 def run_test_sum_of_digits():
