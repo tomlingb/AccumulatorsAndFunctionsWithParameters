@@ -7,6 +7,7 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
          their colleagues and Geoffrey Tomlinson.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ Calls the   TEST   functions in this module. """
@@ -17,7 +18,7 @@ def main():
 def run_test_sum_cosines():
     """ Tests the   sum_cosines   function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this function.
+    # DONE: 2. Implement this function.
     #   It TESTS the  sum_cosines  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -28,6 +29,21 @@ def run_test_sum_cosines():
     print('--------------------------------------------------')
     print('Testing the   sum_cosines   function:')
     print('--------------------------------------------------')
+
+    expected = 1.12416
+    answer = sum_cosines(2)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    expected = -.519481
+    answer = sum_cosines(4)
+    print('Test 2 expected:', expected)
+    print('         actual:', answer)
+
+    expected = 1.47825
+    answer = sum_cosines(7)
+    print('Test 3 expected:', expected)
+    print('         actual:', answer)
 
 
 def sum_cosines(n):
@@ -40,8 +56,19 @@ def sum_cosines(n):
       If n is 3, this function returns
         cos(0) + cos(1) + cos(2) + cos(3)   which is about 0.13416.
     """
+
+    if n < 0:
+        n = -n
+
+    total = 0
+
+    for k in range(n + 1):
+        total = total + math.cos(k)
+
+    return total
+
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
