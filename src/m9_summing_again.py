@@ -29,18 +29,20 @@ def run_test_sum_powers():
     print('Testing the   sum_powers   function:')
     print('--------------------------------------------------')
 
-    expected =
+    expected = 100
     answer = sum_powers(4, 3)
     print('Test 1 expected:', expected)
     print('         actual:', answer)
 
-    expected =
+    expected = 4676
     answer = sum_powers(7, 4)
     print('Test 2 expected:', expected)
     print('         actual:', answer)
 
-    expected =
-    answer =
+    expected = 1
+    answer = sum_powers(1, 5)
+    print('Test 2 expected:', expected)
+    print('         actual:', answer)
 
 
 def sum_powers(n, p):
@@ -55,6 +57,10 @@ def sum_powers(n, p):
       -- sum_powers(5, -0.3) returns about 3.80826
       -- sum_powers(100, 0.1) returns about 144.45655
     """
+    for k in range(n):
+        answer = ((n + 1) ** p)
+        return
+
     # ------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).

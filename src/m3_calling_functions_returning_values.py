@@ -88,6 +88,7 @@ def run_test_sum_of_digits():
     print('Test 4 expected:', expected)
     print('         actual:', answer)
 
+
 def sum_of_digits(number):
     """
     What comes in:  An integer.
@@ -108,8 +109,6 @@ def sum_of_digits(number):
     # The ONLY part of this function that you need to understand is
     # the doc-string above.  Treat this function as a black box.
     # ------------------------------------------------------------------
-    if number < 0:
-        number = -number
 
     digit_sum = 0
     while True:
@@ -310,10 +309,10 @@ def fancy_sums_of_digits(n):
             -- so this function returns 124309.
     """
 
-    x = n ** 1000
-    y = n ** 999
+    x = sum_of_digits(n ** 1000)
+    y = sum_of_digits(n ** 999)
 
-    answer = fancy_sums_of_digits(x ** y)
+    answer = sum_of_digits(x ** y)
     return answer
 
     # ------------------------------------------------------------------
