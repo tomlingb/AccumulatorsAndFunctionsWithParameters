@@ -194,7 +194,7 @@ def digits_in_cube(n):
 def run_test_digits_in_power():
     """ Tests the   digits_in_power   function. """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement this function.
+    # DONE: 5. Implement this function.
     #   It TESTS the  digits_in_power  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -204,6 +204,21 @@ def run_test_digits_in_power():
     print('--------------------------------------------------')
     print('Testing the   digits_in_power   function:')
     print('--------------------------------------------------')
+
+    expected = 46
+    answer = digits_in_power(19, 8)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    expected = 27
+    answer = digits_in_power(6, 5)
+    print('Test 2 expected:', expected)
+    print('         actual:', answer)
+
+    expected = 1
+    answer = digits_in_power(1, 6)
+    print('Test 3 expected:', expected)
+    print('         actual:', answer)
 
 
 def digits_in_power(n, k):
@@ -217,8 +232,12 @@ def digits_in_power(n, k):
       this function returns 18
       since 12 to the 3rd power is 1728 (whose digits sum to 18).
     """
+
+    x = n**k
+    answer = sum_of_digits(x)
+    return answer
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #
     ####################################################################
     # IMPORTANT: CALL, as many times as needed,
