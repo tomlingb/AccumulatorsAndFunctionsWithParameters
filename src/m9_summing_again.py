@@ -88,6 +88,21 @@ def run_test_sum_powers_in_range():
     print('Testing the   sum_powers_in_range   function:')
     print('--------------------------------------------------')
 
+    expected = 5
+    answer = sum_powers_in_range(1, 2, 2)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    expected = 1
+    answer = sum_powers_in_range(5, 30, .5)
+    print('Test 2 expected:', expected)
+    print('         actual:', answer)
+
+    expected = 142.384776
+    answer = sum_powers_in_range(3, 100, .01)
+    print('Test 3 expected:', expected)
+    print('         actual:', answer)
+
 
 def sum_powers_in_range(m, n, p):
     """
@@ -108,6 +123,13 @@ def sum_powers_in_range(m, n, p):
     #   No fair running the code of  sum_powers_in_range  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
+
+    answer = 0
+
+    for k in range(m + 1, n + 1):
+        answer = answer + (k ** p)
+
+    return answer
 
 
 # ----------------------------------------------------------------------

@@ -174,7 +174,7 @@ def digits_in_cube(n):
       this function returns (1 + 2 + 5), which is 8.
     """
 
-    n = n**3
+    n = n ** 3
     answer = sum_of_digits(n)
     return answer
 
