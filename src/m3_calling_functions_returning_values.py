@@ -18,7 +18,7 @@ def main():
     run_test_sum_of_digits()
     run_test_digits_in_cube()
     run_test_digits_in_power()
-    #run_test_fancy_sums_of_digits()
+    run_test_fancy_sums_of_digits()
 
     # ------------------------------------------------------------------
     # TODO: 9. DO THIS LAST!
@@ -313,7 +313,7 @@ def fancy_sums_of_digits(n):
     x = n ** 1000
     y = n ** 999
 
-    answer = sum_of_digits(x ** y)
+    answer = fancy_sums_of_digits(x ** y)
     return answer
 
     # ------------------------------------------------------------------

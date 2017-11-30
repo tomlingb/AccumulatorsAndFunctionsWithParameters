@@ -29,6 +29,19 @@ def run_test_sum_powers():
     print('Testing the   sum_powers   function:')
     print('--------------------------------------------------')
 
+    expected =
+    answer = sum_powers(4, 3)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    expected =
+    answer = sum_powers(7, 4)
+    print('Test 2 expected:', expected)
+    print('         actual:', answer)
+
+    expected =
+    answer =
+
 
 def sum_powers(n, p):
     """
