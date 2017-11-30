@@ -18,6 +18,7 @@ def main():
     print_sequence1()
     draw_circles1()
     print_sequence2()
+    draw_circles2()
 
 
 def print_sequence1():
@@ -113,7 +114,7 @@ def draw_circles2():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
@@ -121,6 +122,18 @@ def draw_circles2():
     print('--------------------------------------------------')
     print('Running draw_circles2:  See graphics window')
     print('--------------------------------------------------')
+
+    window = rg.RoseWindow(400, 400)
+
+    for k in range(18):
+        circlex = 20 * k + 50
+        center = rg.Point(circlex, 100)
+        circle = rg.Circle(center, 10)
+        circle.fill_color = 'blue'
+        circle.attach_to(window)
+        window.render(0.05)
+
+    window.close_on_mouse_click()
 
 
 def print_sequence3():
