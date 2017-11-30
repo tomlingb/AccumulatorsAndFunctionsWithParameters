@@ -148,6 +148,30 @@ def better_draw_circles(n):
 #   can you make some fun pictures?
 # ----------------------------------------------------------------------
 
+def run_test_even_better_draw_circles():
+
+    print()
+    print('--------------------------------------------------')
+    print('Testing  better_draw_circles:  See graphics window')
+    print('--------------------------------------------------')
+
+    better_draw_circles(2)
+    better_draw_circles(5)
+    better_draw_circles(20)
+
+
+def even_better_draw_circles(n):
+
+    window = rg.RoseWindow(400, 400)
+
+    center = rg.Point(200, 200)
+    for k in range(21):
+        circle = rg.Circle(center, n * k)
+        circle.attach_to(window)
+        window.render(0.05)  # Pauses for 0.05 seconds after rendering.
+
+    window.close_on_mouse_click()
+
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
