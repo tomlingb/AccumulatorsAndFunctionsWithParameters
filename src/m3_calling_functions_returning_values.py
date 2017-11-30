@@ -276,7 +276,7 @@ def run_test_fancy_sums_of_digits():
     print('         actual:', answer)
 
     # ------------------------------------------------------------------
-    # HINT:  For your 1st test, consider  n=10.  Figure out BY HAND
+    # HINT:  For your 1st test, considr  n=10.  Figure out BY HAND
     # the correct (expected) answer for that test case.  (It's easy.)
     # The doc-string below gives test cases you can use for
     # your 2nd and 3rd tests but READ THOSE TEST CASES CAREFULLY
